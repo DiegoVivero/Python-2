@@ -1,8 +1,14 @@
+def main():
+    x = int(input("¿Qué es x?  "))
+    if es_par(x):
+        print("es número par")
+    else:
+        print("Impar")
+    
 def es_par(n): 
     if n % 2 == 0:
         return True
     else: 
         return False
 
-if es_par(4): 
-    print("Es un número par")
+main()
