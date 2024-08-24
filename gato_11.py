@@ -4,9 +4,9 @@ while True:
         continue
     else:
         break
+    miau(n)
 
 def miau(n):
     for i in range(n): 
         print("miau")
-
-miau(n)
+main()
