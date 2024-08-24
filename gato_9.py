@@ -1,3 +1,6 @@
 while True: 
-    n = int(input("Ingrese un valor n mayor que 0"))
-    
+    n = int(input("Ingrese un valor n mayor que 0:  "))
+    if n < 0:
+        continue
+    else:
+        break
