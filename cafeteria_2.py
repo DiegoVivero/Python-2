@@ -1,8 +1,8 @@
 num_clientes = int(input("ingresar número de clientes: "))
-
+venta_del_dia = 0
 for i in range(num_clientes):
     nombre = input("cual es tu nombre: ")
-
+    
     cafe = int(input("cuanto cafe quiere: "))
     te = int(input("cuanto te quiere: "))
     jugo_natural = int(input("cuanto jugo natural quiere: "))
@@ -11,7 +11,9 @@ for i in range(num_clientes):
     p_cafe = 1500
     p_te = 1000
     p_jugo = 2000
+
     precio_total = cafe * p_cafe + te * p_te + jugo_natural * p_jugo
+    venta_del_dia += precio_total
 
     print(f"El precio total del pedido para {nombre} es: {precio_total}")
 
@@ -24,4 +26,7 @@ for i in range(num_clientes):
     else:
         descuento = 0.0
 
-    print(descuento)
+    print(f"El precio total con descuento de {descuento * 100}% es igual a: {precio_total * (1 - descuento)}")
+    venta_del_dia += precio_total * (1 - descuento)
+
+print(f"La venta total del dia fue: {venta_del_dia}")
