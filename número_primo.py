@@ -1,4 +1,7 @@
 n = int(input("Ingresa número entero: ")) 
 
 for i in range(2, n): 
-    print(f"{i}")
+    if n % i == 0: 
+        print(f"{n} no es número primo")
+    else: 
+        print(f"{n} es número primo")
