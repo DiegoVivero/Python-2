@@ -11,8 +11,13 @@ vuelto = vuelto - (billetes_1000 * 1000) #Vuelto % 1000
 
 # Calcular cuantos billetes de a $500 se requieren 
 monedas_500 = int(vuelto / 500)
+vuelto = vuelto % 500 
+
+# Calcular monedas de a $100 se requieren
+monedas_100 = int(vuelto / 100)
 
 # Mostrar el resultado
 print(f" {billetes_1000} billetes de $1.000")
 print(f" {monedas_500} monedas de $500")
+print(f" {monedas_100} monedas de $100")
 
