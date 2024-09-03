@@ -4,8 +4,12 @@ def es_primo(n):
             return False
         return True
 
-es_primo = es_primo(7)
+for i in range (1,100):
+    if es_primo(i):
+        print(i, end=" ")
+
+"""es_primo = es_primo(7)
 if es_primo:
     print("El número es primo")
 else: 
-    print("El número no es primo")
+    print("El número no es primo")"""
